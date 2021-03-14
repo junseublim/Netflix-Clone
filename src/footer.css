@@ -1,0 +1,12 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-item {
+  color: #666;
+  font-size: 0.8rem;
+  padding: 3px;
+}
