@@ -1,6 +1,6 @@
 # Netflix Clone
 
-<img src="./src/logo.png" style="width : 500px"/>
+<img src="./src/static/logo.png" style="width : 500px"/>
 
 리액트를 활용하여 만든 넷플릭스 클론 웹사이트입니다. 영화 데이터는 tmdb api를 사용하였습니다.
 
