@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "./axios";
+import axios from "../../api/axios";
 import "./Row.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
@@ -13,7 +13,6 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       const request = await axios.get(fetchUrl);
       setMovies(request.data.results);
     }
-
     fetchData();
   }, [fetchUrl]);
 
@@ -43,6 +42,13 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
     <div className="row">
       <h2>{title}</h2>
       <div className="row_posters">
+        {/* <button
+          className={`scroll-btn scroll-prev ${
+            isLargeRow && "scroll-btn-large"
+          }`}
+        >
+          {"<"}
+        </button> */}
         {movies.map((movie) => (
           <img
             key={movie.id}
@@ -54,7 +60,15 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             onClick={() => handleClick(movie)}
           />
         ))}
+        {/* <button
+          className={`scroll-btn scroll-next ${
+            isLargeRow && "scroll-btn-large"
+          }`}
+        >
+          {">"}
+        </button> */}
       </div>
+
       {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );

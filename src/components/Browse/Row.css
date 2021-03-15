@@ -1,0 +1,67 @@
+.row {
+  margin-left: 20px;
+  color: white;
+  position: relative;
+  height: auto;
+}
+.row > h2 {
+  font-size: 0.8rem;
+  color: #ddd;
+  padding-left: 20px;
+}
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  height: auto;
+  position: relative;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  transition: transform 450ms;
+  margin-right: 10px;
+  border-radius: 3%;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+.row_posterLarge:hover {
+  transform: scale(1.09);
+}
+
+.scroll-btns {
+  z-index: 0;
+  right: 0;
+  height: 100px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.scroll-prev {
+}
+.scroll-next {
+}
+.scroll-btn:hover {
+  font-size: 1.5rem;
+}
