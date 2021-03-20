@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@
 }
 .nav-category {
   color: white;
-  font-size: 0.6rem;
+  font-size: 1vw;
   margin: 0 10px;
   transition: all 0.2s ease;
 }
@@ -33,8 +33,8 @@
 }
 
 .nav_logo {
-  left: 20px;
-  height: 40px;
+  margin-left: 10px;
+  height: 50px;
   object-fit: contain;
 }
 

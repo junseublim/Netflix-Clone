@@ -9,7 +9,7 @@ const Banner = () => {
       const request = await axios.get(requests.fetchNetflixOriginals);
       setMovie(
         request.data.results[
-          Math.floor(Math.random() * request.data.results.length)
+        Math.floor(Math.random() * request.data.results.length)
         ]
       );
     }
@@ -34,8 +34,8 @@ const Banner = () => {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner_buttons">
-          <button className="banner_button">재생</button>
-          <button className="banner_button">상세 정보</button>
+          <button className="banner_button play">재생</button>
+          <button className="banner_button info">상세 정보</button>
         </div>
         <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
       </div>
