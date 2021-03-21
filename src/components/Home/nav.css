@@ -1,0 +1,60 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  height: 7vw;
+  display: flex;
+  justify-content: space-between;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+
+.nav-left {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-category {
+  color: white;
+  font-size: 1vw;
+  margin: 0 10px;
+  transition: all 0.2s ease;
+}
+
+.nav-category:hover {
+  color: #ddd;
+}
+
+.nav_logo {
+  margin-left: 10px;
+  height: 7vw;
+  object-fit: contain;
+}
+
+.nav-right {
+  position: fixed;
+  right: 20px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-button {
+  margin-left: 2vw;
+  width: 12vw;
+  height: 5vw;
+  border: none;
+  border-radius: 0.5vw;
+}
+
+.lang {
+  color : white;
+  
+}
+.login {
+  color: white;
+  background-color: #df1818;
+}
